@@ -17,7 +17,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build and Run Docker Compose
-        run: docker-compose up --build --wait
+        run: docker compose up --build --wait
 
       - name: Tear down Docker Compose
         if: always()
